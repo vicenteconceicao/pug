@@ -3,16 +3,12 @@
     <div class="avatar"></div>
     <span class="title">TURMA X DO COLÉGIO</span>
     <span class="code">XAP725KL9</span>
-    <input type="mail" placeholder="E-mail" />
-    <button class="btn-enter">Entrar</button>
+    <router-view />
   </div>
 </template>
 
 <script>
-
-export default {
-  name: "LoginEmail",
-};
+export default {};
 </script>
 
 <style src="./style.scss" lang="scss" scoped />

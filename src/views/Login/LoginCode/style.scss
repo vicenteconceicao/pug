@@ -1,9 +1,5 @@
 @import "@/assets/scss/_index.scss";
 
-.container{
-    @include container-home;
-}
-
 button{
     @include button-primary
 }

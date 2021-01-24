@@ -1,9 +1,7 @@
 <template>
-  <div class="container">
     <input @click="goToLoginEmail" placeholder="Informe o Código" />
     <button @click="goTonewGroup">Novo Grupo</button>
     <button @click="goToGroups">Entrar</button>
-  </div>
 </template>
 
 <script>
@@ -11,7 +9,7 @@ export default {
   name: "LoginCode",
   methods: {
     goToLoginEmail() {
-      this.$router.push("/login/mail");
+      this.$router.push("/group");
     },
     goToGroups() {
       this.$router.push("/login/user");
