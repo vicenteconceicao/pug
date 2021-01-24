@@ -1,0 +1,9 @@
+@import '@/assets/scss/_index.scss';
+
+button{
+    @include button-back;
+
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
