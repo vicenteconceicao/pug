@@ -11,12 +11,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-    footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: #FFFFFF;
-    }
-</style>
+<style src="./style.scss" lang="scss" scoped />

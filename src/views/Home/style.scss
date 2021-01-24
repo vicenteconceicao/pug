@@ -1,4 +1,19 @@
+@import "@/assets/scss/_index.scss";
+
 .home {
     font-family: "Oswald", Helvetica, Arial;
     font-size: 1.2rem;
-  }
+}
+
+.buttons{
+    @include container-home;
+
+    button{
+        @include button-primary
+    }
+    
+    input{
+        @include input-white
+    }
+}
+

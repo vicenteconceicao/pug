@@ -1,20 +1,30 @@
 <template>
   <div class="home">
     <Header></Header>
-    <HomeContent></HomeContent>
+    <div class="buttons">
+      <input placeholder="Informe o Código" />
+      <button @click="goTonewGroup">Novo Grupo</button>
+      <button @click="goToGroups">Entrar</button>
+    </div>
   </div>
 </template>
 
 <script>
-import Header from "@/components/home/Header";
-import HomeContent from "@/components/home/HomeContent/HomeContent"
+import Header from "@/components/template/Header/Header";
 
 export default {
   name: "Home",
   components: {
     Header,
-    HomeContent
   },
+  methods:{
+    goToGroups(){
+      this.$router.push("/groups")
+    },
+    goTonewGroup(){
+      this.$router.push("/new")
+    }
+  }
 };
 </script>
 
