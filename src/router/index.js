@@ -11,6 +11,7 @@ const LoginPassword = () => import('../views/Login/LoginPassword/LoginPassword.v
 const LoginGroup = () => import('../views/LoginGroup/LoginGroup.vue')
 const LoginEmail = () => import('../views/LoginGroup/LoginEmail/LoginEmail.vue')
 const LoginPass = () => import('../views/LoginGroup/LoginPass/LoginPass.vue')
+const LoginCreate = () => import('../views/LoginGroup/LoginCreate/LoginCreate.vue')
 
 const routes = [
   {
@@ -61,6 +62,11 @@ const routes = [
         path: 'pass',
         name: 'LoginPass',
         component: LoginPass
+      },
+      {
+        path: 'signup',
+        name: 'LoginCreate',
+        component: LoginCreate
       }
     ]
   }
