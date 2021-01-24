@@ -1,0 +1,10 @@
+@import "./colors";
+
+@mixin avatar {
+    box-sizing: border-box;
+    width: 8rem;
+    height:  8rem;
+    background-color: white;
+    border: solid 0.2rem $grey-200;
+    border-radius: 50%;
+}

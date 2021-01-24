@@ -1,10 +1,6 @@
 <template>
-  <div class="home">
-    <div class="buttons">
-      <input placeholder="Informe o Código" />
-      <button @click="goTonewGroup">Novo Grupo</button>
-      <button @click="goToGroups">Entrar</button>
-    </div>
+  <div class="container">
+    <button @click="goToLogin">Login</button>
   </div>
 </template>
 
@@ -13,12 +9,9 @@
 export default {
   name: "Home",
   methods:{
-    goToGroups(){
+    goToLogin(){
       this.$router.push("/login")
     },
-    goTonewGroup(){
-      this.$router.push("/new")
-    }
   }
 };
 </script>

@@ -1,0 +1,25 @@
+@import '@/assets/scss/_index.scss';
+
+.container{
+    @include container-home;
+}
+
+input{
+    @include input-white;
+}
+
+.btn-enter{
+    @include button-primary;
+}
+
+.title{
+    @include title-white;
+}
+
+.code{
+    @include title-code;
+}
+
+.avatar{
+    @include avatar;
+}
