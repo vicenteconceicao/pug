@@ -1,16 +1,17 @@
 @import '@/assets/scss/_index.scss';
 
-input{
-    @include input-white;
+.mail{
+    @include title-code;
 }
 
-input[type='checkbox']{
-    @include input-check;
+input{
+    @include input-white;
 }
 
 .btn-enter{
     @include button-primary;
 }
+
 
 .forget{
     @include title-default ;

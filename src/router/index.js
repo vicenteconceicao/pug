@@ -7,7 +7,10 @@ const CreateGroup = () => import('../views/Groups/CreateGroup/CreateGroup.vue')
 const Login = () => import('../views/Login/Login.vue')
 const LoginCode = () => import('../views/Login/LoginCode/LoginCode.vue')
 const LoginPassword = () => import('../views/Login/LoginPassword/LoginPassword.vue')
-const LoginEmail = () => import('../views/Login/LoginEmail/LoginEmail.vue')
+
+const LoginGroup = () => import('../views/LoginGroup/LoginGroup.vue')
+const LoginEmail = () => import('../views/LoginGroup/LoginEmail/LoginEmail.vue')
+const LoginPass = () => import('../views/LoginGroup/LoginPass/LoginPass.vue')
 
 const routes = [
   {
@@ -41,10 +44,23 @@ const routes = [
         name: 'LoginPassword',
         component: LoginPassword
       },
+    ]
+  },
+  {
+    path: '/group',
+    redirect: '/group/mail',
+    name: 'LoginGroup',
+    component: LoginGroup,
+    children: [
       {
         path: 'mail',
         name: 'LoginEmail',
         component: LoginEmail
+      },
+      {
+        path: 'pass',
+        name: 'LoginPass',
+        component: LoginPass
       }
     ]
   }

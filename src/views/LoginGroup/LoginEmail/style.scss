@@ -4,14 +4,6 @@ input{
     @include input-white;
 }
 
-input[type='checkbox']{
-    @include input-check;
-}
-
 .btn-enter{
     @include button-primary;
-}
-
-.forget{
-    @include title-default ;
 }

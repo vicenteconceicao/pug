@@ -1,15 +1,7 @@
-@import '@/assets/scss/_index.scss';
+@import "@/assets/scss/_index.scss";
 
 .container{
     @include container-home;
-}
-
-input{
-    @include input-white;
-}
-
-.btn-enter{
-    @include button-primary;
 }
 
 .title{
