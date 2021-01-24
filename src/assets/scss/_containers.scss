@@ -1,6 +1,4 @@
-@import "@/assets/scss/_index.scss";
-
-.buttons {
+@mixin container-home {
     position: relative;
     min-height: 100vh;
     display: flex;
@@ -8,13 +6,4 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
-
-    button{
-        @include button-primary
-    }
-
-    input{
-        @include input-white
-    }
 }
-

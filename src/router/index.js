@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const Home = () => import('../views/Home/Home.vue')
 const Groups = () => import('../views/Groups/Groups.vue')
+const CreateGroup = () => import('../views/Groups/CreateGroup/CreateGroup.vue')
 
 const routes = [
   {
@@ -13,6 +14,11 @@ const routes = [
     path: '/groups',
     name: 'Groups',
     component: Groups
+  },
+  {
+    path: '/new',
+    name: 'Group',
+    component: CreateGroup
   }
 ]
 
