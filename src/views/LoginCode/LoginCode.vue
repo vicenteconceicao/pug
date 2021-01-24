@@ -1,21 +1,21 @@
 <template>
     <input @click="goToLoginEmail" placeholder="Informe o Código" />
-    <button @click="goTonewGroup">Novo Grupo</button>
-    <button @click="goToGroups">Entrar</button>
+    <button @click="goToSignin">Entrar</button>
+    <button @click="goToSignup">Criar Conta</button>
 </template>
 
 <script>
 export default {
   name: "LoginCode",
   methods: {
-    goToLoginEmail() {
+    goToLoginEmail(){
       this.$router.push("/group");
     },
-    goToGroups() {
-      this.$router.push("/login/user");
+    goToSignin() {
+      this.$router.push("/login/signin");
     },
-    goTonewGroup() {
-      this.$router.push("/new");
+    goToSignup() {
+      this.$router.push("/signup");
     },
   },
 };

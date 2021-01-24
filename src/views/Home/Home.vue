@@ -1,18 +1,19 @@
 <template>
   <div class="container">
-    <button @click="goToLogin">Login</button>
+    <transition name="slide" mode="out-in">
+      <router-view />
+    </transition>
+    <ButtonBack />
   </div>
 </template>
 
 <script>
-
+import ButtonBack from "@/components/buttons/ButtonBack/ButtonBack";
 export default {
   name: "Home",
-  methods:{
-    goToLogin(){
-      this.$router.push("/login")
-    },
-  }
+  components: {
+    ButtonBack,
+  },
 };
 </script>
 
