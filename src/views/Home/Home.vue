@@ -14,7 +14,7 @@ export default {
   name: "Home",
   methods:{
     goToGroups(){
-      this.$router.push("/groups")
+      this.$router.push("/login")
     },
     goTonewGroup(){
       this.$router.push("/new")

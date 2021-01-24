@@ -1,0 +1,13 @@
+@import "./colors";
+
+@mixin title-default {
+    font-family: "LuckiestGuy", Helvetica, Arial;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+@mixin title-white {
+    @include title-default;
+
+    color: $white;
+}
