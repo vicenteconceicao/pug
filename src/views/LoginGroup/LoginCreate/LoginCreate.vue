@@ -1,6 +1,9 @@
 <template>
-  <input @click="goToPass" type="email" placeholder="email@email.com" />
-  <button @click="goToCreate" class="btn-enter">Entrar</button>
+  <span class="mail">email@email.com</span>
+  <input type="text" placeholder="NOME COMPLETO">
+  <input type="password" placeholder="Senha">
+  <input type="password" placeholder="Confirmar Senha">
+  <button class="btn-enter">Entrar</button>
   <ButtonBack />
 </template>
 
@@ -8,16 +11,13 @@
 import ButtonBack from "@/components/buttons/ButtonBack/ButtonBack";
 
 export default {
-  name: "LoginEmail",
+  name: "LoginCreate",
   components: {
     ButtonBack,
   },
   methods:{
     goToPass(){
       this.$router.push("/group/pass");
-    },
-    goToCreate(){
-      this.$router.push("/group/signup");
     }
   }
 };
