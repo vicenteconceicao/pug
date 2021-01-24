@@ -1,5 +1,22 @@
-@import "@/assets/scss/_index.scss";
+@import '@/assets/scss/_index.scss';
 
 .container{
     @include container-home;
+}
+
+
+input{
+    @include input-white;
+}
+
+input[type='checkbox']{
+    @include input-check;
+}
+
+.btn-enter{
+    @include button-primary;
+}
+
+.forget{
+    @include title-default ;
 }

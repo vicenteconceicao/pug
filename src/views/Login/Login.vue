@@ -1,16 +1,19 @@
 <template>
-  <div class="container">
-    <router-view />
-    <ButtonBack />
+  <div class="container" key="login">
+    <input type="mail" placeholder="E-mail" />
+    <input type="password" placeholder="senha" />
+    <Checkbox label="MATENHA-ME CONECTADO" />
+    <button class="btn-enter">Entrar</button>
+    <span class="forget">Esqueci minha senha!</span>
   </div>
 </template>
 
 <script>
-import ButtonBack from "@/components/buttons/ButtonBack/ButtonBack";
+import Checkbox from "@/components/inputs/Checkbox/Checkbox";
 export default {
-  name: "Login",
+  name: "LoginPassword",
   components: {
-    ButtonBack,
+    Checkbox,
   },
 };
 </script>
