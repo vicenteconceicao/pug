@@ -7,6 +7,7 @@ const Options = () => import('../views/Options/Options.vue')
 
 const Groups = () => import('../views/Groups/Groups.vue')
 const GroupList = () => import('../views/Groups/GroupList/GroupList.vue')
+const GroupCreate = () => import('../views/Groups/GroupCreate/GroupCreate.vue')
 
 
 
@@ -44,6 +45,11 @@ const routes = [
         path: '/list',
         name: 'GroupList',
         component: GroupList,
+      },
+      {
+        path: '/create',
+        name: 'GroupCreate',
+        component: GroupCreate,
       },
     ]
   },

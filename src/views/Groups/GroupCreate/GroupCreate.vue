@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" key="group-create">
       <input placeholder="Nome do Grupo" />
       <input placeholder="Data do Sorteio" />
       <input placeholder="Data da Revelação" />
