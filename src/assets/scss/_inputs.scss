@@ -1,21 +1,30 @@
 @import "./colors";
 
-@mixin input-white {
+@mixin input-default {
     font-family: "LuckiestGuy", Helvetica, Arial;
-    font-size: 20px;
     background-color: $white;
-    padding: 1rem ;
     border: none;
-    border-radius: 3em;
-    color: $grey-600;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     margin-top: 1rem;
-    text-align: center;
-    min-width: 320px;
     box-sizing: border-box;
     cursor: pointer;
 
     &:focus{
         outline: none;
     }
+}
+
+@mixin input-white {
+    @include input-default;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 1rem ;
+    border-radius: 3em;
+    color: $grey-600;
+    text-align: center;
+    min-width: 320px;
+}
+
+@mixin input-check {
+    
 }

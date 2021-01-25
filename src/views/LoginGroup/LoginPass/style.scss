@@ -1,0 +1,18 @@
+@import '@/assets/scss/_index.scss';
+
+.mail{
+    @include title-code;
+}
+
+input{
+    @include input-white;
+}
+
+.btn-enter{
+    @include button-primary;
+}
+
+
+.forget{
+    @include title-default ;
+}

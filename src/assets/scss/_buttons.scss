@@ -1,21 +1,46 @@
 @import './colors';
 
-@mixin button-primary {
+@mixin button-default {
     font-family: "LuckiestGuy", Helvetica, Arial;
     font-size: 20px;
-    background-color: $primary;
     padding: 1rem ;
     border: none;
     border-radius: 3em;
     color: #FFFFFF;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     margin-top: 1rem;
-    min-width: 320px;
     cursor: pointer;
+    
     &:focus{
         outline: none;
     }
+}
+
+@mixin button-primary {
+    @include button-default;
+    background-color: $primary;
+    min-width: 320px;
+
     &:hover{
         background-color: $primary-2;
+    }
+}
+
+@mixin button-secondary {
+    @include button-default;
+    background-color: $secondary;
+    min-width: 120px;
+
+    &:hover{
+        background-color: $secondary-2;
+    }
+}
+
+@mixin button-back {
+    @include button-default;
+    background-color:$grey-800;
+    
+    &:hover{
+        background-color: $grey-700;
     }
 }

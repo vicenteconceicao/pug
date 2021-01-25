@@ -1,0 +1,13 @@
+@import '@/assets/scss/_index.scss';
+
+.container{
+    @include container-default;
+}
+
+input{
+    @include input-white;
+}
+
+.btn-enter{
+    @include button-primary;
+}

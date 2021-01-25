@@ -1,0 +1,10 @@
+@import "@/assets/scss/_index.scss";
+
+button{
+    @include button-primary
+}
+
+input{
+    @include input-white
+}
+

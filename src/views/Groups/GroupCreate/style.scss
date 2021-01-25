@@ -1,0 +1,19 @@
+@import '@/assets/scss/_index.scss';
+
+input{
+    @include input-white;
+}
+
+.btn-create{
+    @include button-primary;
+}
+
+.container{
+    @include container-default;
+    background-color: $secondary;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}

@@ -1,0 +1,17 @@
+@import "@/assets/scss/_index.scss";
+
+.container{
+    @include container-home;
+}
+
+.title{
+    @include title-white;
+}
+
+.code{
+    @include title-code;
+}
+
+.avatar{
+    @include avatar;
+}

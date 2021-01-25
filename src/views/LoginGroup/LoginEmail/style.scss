@@ -1,0 +1,9 @@
+@import '@/assets/scss/_index.scss';
+
+input{
+    @include input-white;
+}
+
+.btn-enter{
+    @include button-primary;
+}

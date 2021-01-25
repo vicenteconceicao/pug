@@ -1,0 +1,24 @@
+@import "./colors";
+
+@mixin title-default {
+    font-family: "LuckiestGuy", Helvetica, Arial;
+    margin-top: 1rem;
+    color: $white;
+}
+
+@mixin title-white {
+    @include title-default;
+    font-size: 1.6rem;
+}
+
+
+@mixin title-code {
+    @include title-default;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+@mixin page-title {
+    @include title-default;
+    color: $secondary;
+    margin-top: 2.5rem;
+}
