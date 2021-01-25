@@ -1,9 +1,9 @@
 <template>
-  <div class="group-list">
+  <div class="group-list" key="group-list">
     <h1>GRUPOS</h1>
     <Card v-for="n in number" :key="n" />
     <div class="buttons">
-        <button class="create">Criar</button>
+        <button @click="goToCreate" class="create">Criar</button>
         <button @click="goOut" class="logout">Sair</button>
     </div>
   </div>
@@ -23,6 +23,9 @@ export default {
   methods: {
     goOut(){
       this.$router.push('/');
+    },
+    goToCreate(){
+      this.$router.push('/create');
     }
   }
 }

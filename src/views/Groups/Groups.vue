@@ -1,17 +1,19 @@
 <template>
   <div class="groups">
     <HeaderBar />
-    <router-view></router-view>
+    <transition name="slide" mode="out-in">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
-import HeaderBar from '@/components/template/HeaderBar/HeaderBar'
+import HeaderBar from "@/components/template/HeaderBar/HeaderBar";
 export default {
   components: {
-    HeaderBar
-  }
-}
+    HeaderBar,
+  },
+};
 </script>
 
 <style src="./style.scss" lang="scss" scoped />
