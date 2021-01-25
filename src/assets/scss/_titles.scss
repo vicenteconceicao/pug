@@ -16,3 +16,9 @@
     @include title-default;
     font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
+
+@mixin page-title {
+    @include title-default;
+    color: $secondary;
+    margin-top: 2.5rem;
+}

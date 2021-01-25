@@ -1,0 +1,22 @@
+@import '@/assets/scss/_index.scss';
+
+h1 {
+    @include page-title;
+}
+
+.group-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 1rem;
+    bottom: 1rem;
+    z-index: 1;
+    button{
+        @include button-secondary;
+    }
+}
