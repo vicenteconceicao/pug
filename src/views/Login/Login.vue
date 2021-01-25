@@ -3,7 +3,7 @@
     <input type="mail" placeholder="E-mail" />
     <input type="password" placeholder="senha" />
     <Checkbox label="MATENHA-ME CONECTADO" />
-    <button class="btn-enter">Entrar</button>
+    <button @click="goToGroups" class="btn-enter">Entrar</button>
     <span class="forget">Esqueci minha senha!</span>
   </div>
 </template>
@@ -15,6 +15,11 @@ export default {
   components: {
     Checkbox,
   },
+  methods:{
+    goToGroups(){
+      this.$router.push('/groups');
+    }
+  }
 };
 </script>
 

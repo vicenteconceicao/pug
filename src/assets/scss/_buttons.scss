@@ -26,6 +26,16 @@
     }
 }
 
+@mixin button-secondary {
+    @include button-default;
+    background-color: $secondary;
+    min-width: 120px;
+
+    &:hover{
+        background-color: $secondary-2;
+    }
+}
+
 @mixin button-back {
     @include button-default;
     background-color:$grey-800;

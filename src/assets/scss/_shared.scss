@@ -8,3 +8,10 @@
     border: solid 0.2rem $grey-200;
     border-radius: 50%;
 }
+
+@mixin group-avatar {
+    @include avatar;
+    width: 5rem;
+    height:  5rem;
+ 
+}

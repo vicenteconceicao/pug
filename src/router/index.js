@@ -1,11 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-const Groups = () => import('../views/Groups/Groups.vue')
-
 const Home = () => import('../views/Home/Home.vue')
 const Login = () => import('../views/Login/Login.vue')
 const Signup = () => import('../views/Signup/Signup.vue')
 const Options = () => import('../views/Options/Options.vue')
+
+const Groups = () => import('../views/Groups/Groups.vue')
+const GroupList = () => import('../views/Groups/GroupList/GroupList.vue')
+
+
 
 const routes = [
   {
@@ -34,7 +37,15 @@ const routes = [
   {
     path: '/groups',
     name: 'Groups',
-    component: Groups
+    component: Groups,
+    redirect: '/list',
+    children: [
+      {
+        path: '/list',
+        name: 'GroupList',
+        component: GroupList,
+      },
+    ]
   },
 ]
 

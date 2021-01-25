@@ -1,0 +1,12 @@
+@import '@/assets/scss/_index.scss';
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: $white;
+    border-bottom: solid 0.1rem $grey-200;
+    z-index: 1;
+}
