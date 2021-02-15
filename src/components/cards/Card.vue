@@ -16,7 +16,7 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/_index.scss";
+@import '@/sass/_main.scss';
 
 .card {
 font-family: Calibri, Arial, Helvetica, sans-serif;
